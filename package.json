@@ -4,11 +4,11 @@
   "description": "musicmind Visualization",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "mm-spotify"
+    "url": "https://github.com/majickdave/mm-spotify.git"
   },
   "keywords": [
     "musicmind",
@@ -16,6 +16,18 @@
     "spotify",
     "music"
   ],
-  "author": "David Samuel",
-  "license": "ISC"
+  "author": "David Samuel <majickdave@gmail.com> (http://mscmnd.com)",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.26.0",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "firebase-admin": "^4.1.3",
+    "mongodb": "^2.2.24",
+    "pg": "^6.1.4",
+    "request": "^2.80.0",
+    "spotify-web-api-node": "^2.3.6",
+    "ejs": "2.5.6",
+    "cool-ascii-faces": "1.3.4"
+  }
 }
