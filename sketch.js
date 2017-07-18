@@ -17,7 +17,7 @@ var images = [];
 
 
 function setup() {
-  createCanvas(1200,800);
+  createCanvas(800,600);
 
 
   // number = Math.floor(randomInt(1,2176));
@@ -34,8 +34,8 @@ function setup() {
     spd.push(new p5.Vector(-2 + Math.random()*4, Math.random()*2));
     radii.push(random(5, 10));
     gravity.push(random(.01, .06));
-    friction = .991;
-    damping = .999;
+    friction = .811;
+    damping = .923;
   }
 
   
