@@ -1,0 +1,21 @@
+{
+  "name": "js_vis",
+  "version": "1.0.0",
+  "description": "musicmind Visualization",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "mm-spotify"
+  },
+  "keywords": [
+    "musicmind",
+    "emoji",
+    "spotify",
+    "music"
+  ],
+  "author": "David Samuel",
+  "license": "ISC"
+}
