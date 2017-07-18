@@ -18,7 +18,7 @@ var images = [];
 
 function setup() {
   createCanvas(1200,800);
-  background(255);
+  background(0);
 
   // number = Math.floor(randomInt(1,2176));
 
@@ -43,7 +43,7 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  // background(255);
   // fill(100, 255, 30);
   
   for(var i=0; i<count; i++){
