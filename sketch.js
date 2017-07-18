@@ -34,8 +34,8 @@ function setup() {
     spd.push(new p5.Vector(-2 + Math.random()*4, Math.random()*2));
     radii.push(random(5, 10));
     gravity.push(random(.01, .06));
-    friction = .875;
-    damping = .786;
+    friction = .991;
+    damping = .999;
   }
 
   
@@ -43,7 +43,7 @@ function setup() {
 }
 
 function draw() {
-  // background(255);
+  background(0);
   // fill(100, 255, 30);
   
   for(var i=0; i<count; i++){
@@ -56,10 +56,10 @@ function draw() {
       pos[i].y += spd[i].y;
       checkCollisions(pos[i], spd[i], radii[i]);
   }
-  fill(255);
-  textSize(64);
+  // fill(255);
+  // textSize(64);
 
-  text("Welcome to Music Translational Software", width/2, height/2, width/6, height/3);
+  // text("Welcome to Music Translational Software", width/2, height/2, width/6, height/3);
 
 }
 
