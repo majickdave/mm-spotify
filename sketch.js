@@ -18,7 +18,7 @@ var images = [];
 
 function setup() {
   createCanvas(1200,800);
-  background(0);
+
 
   // number = Math.floor(randomInt(1,2176));
 
