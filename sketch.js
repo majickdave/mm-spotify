@@ -4,7 +4,7 @@
 
 // var x, y, spdX, spdY;
 
-var count = randomInt(10,200);
+var count;
 var pos;
 var spd;
 var radii = [];
@@ -23,7 +23,7 @@ var emojis = [];
 function setup() {
   createCanvas(800, 600);
 
-
+  count = randomInt(10,200)
   // number = Math.floor(randomInt(1,2176));
 
   // img = loadImage("assets/images/48x48/".concat(number,".png"));
