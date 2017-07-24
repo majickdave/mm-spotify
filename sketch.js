@@ -63,13 +63,13 @@ function draw() {
 
   if (scrollingY > height){
     scrollingY = 0
-    scrollingX = randomInt(50,500);
+    scrollingX = width/4;
   }
 
 
   textSize(64);
   fill(255);
-  text("Kendrick Lamar - Damn.", scrollingX, scrollingY, width);
+  text("Kendrick Lamar - Damn.", scrollingX, scrollingY, width, height/5);
 }
 
 function checkCollisions(pos, spd, rad){
