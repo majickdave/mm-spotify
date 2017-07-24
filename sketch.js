@@ -23,7 +23,7 @@ var emojis = [];
 function setup() {
   createCanvas(800, 600);
 
-  count = randomInt(10,200)
+  count = randomInt(10,100);
   // number = Math.floor(randomInt(1,2176));
 
   // img = loadImage("assets/images/48x48/".concat(number,".png"));
@@ -63,7 +63,7 @@ function draw() {
 
   if (scrollingY > height){
     scrollingY = 0
-    scrollingX = width/4;
+    scrollingX = width/7;
   }
 
 
@@ -105,7 +105,7 @@ function loadEmojis() {
 
       pos.push(new p5.Vector(mouseX, mouseY));
       spd.push(new p5.Vector(-2 + Math.random()*4, Math.random()*2));
-      radii.push(random(5, 15));
+      radii.push(random(2, 15));
       gravity.push(random(.01, .06));
       friction = .811;
       damping = .923;   
