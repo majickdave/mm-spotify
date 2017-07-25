@@ -27,8 +27,9 @@ var bg;
 // }
 
 function setup() {
+  
   bg = loadImage("assets/images/kendrick2.jpg");
-  var canvas = createCanvas(640, 480);
+  var canvas = createCanvas(480, 360);
   canvas.parent('sketch-holder');
 
   count = random(5,15);
@@ -54,7 +55,8 @@ function setup() {
 
 function draw() {
   background(0);
-  image(bg, 0, 0, width, 640)
+  imageMode(CENTER);
+  image(bg, width/2, height/2+100, 480, 360)
   // fill(100, 255, 30);
   
   scrollingX -= 2;
