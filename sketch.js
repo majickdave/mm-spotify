@@ -27,12 +27,11 @@ var bg;
 // }
 
 function setup() {
-
   bg = loadImage("assets/images/kendrick2.jpg");
   var canvas = createCanvas(480, 480);
   canvas.parent('sketch-holder');
 
-  count = random(5,15);
+  count = Math.floor(random(6,28));
 
   
   // number = Math.floor(randomInt(1,2176));
@@ -72,7 +71,7 @@ function draw() {
       spd[i].z += gravity[i];
       pos[i].y += spd[i].y;
       pos[i].z += spd[i].z
-      tint(255, pos[i].x-width/width*48);
+      tint(255, pos[i].x-width/width*1);
       image(emojis[i], pos[i].x, pos[i].y, radii[i]*6, radii[i]*6);
       
       checkCollisions(pos[i], spd[i], radii[i]);
