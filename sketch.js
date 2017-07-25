@@ -56,7 +56,7 @@ function setup() {
 function draw() {
   background(0);
   imageMode(CENTER);
-  image(bg, width/2, height/2+100, 480, 360)
+  image(bg, width/2, height/2, 480, 360)
   // fill(100, 255, 30);
   
   scrollingX -= 2;
@@ -76,13 +76,13 @@ function draw() {
   }
 
   if (scrollingX < 0-100){
-    scrollingX = width*2;
+    scrollingX = width*3;
   }
 
 
   noTint();
   textAlign(RIGHT);
-  textSize(64);
+  textSize(48);
   fill(255);
   text("Kendrick Lamar - DNA.", scrollingX, height-10);
 }
