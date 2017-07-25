@@ -29,7 +29,7 @@ var bg;
 function setup() {
 
   bg = loadImage("assets/images/kendrick2.jpg");
-  var canvas = createCanvas(480, 360);
+  var canvas = createCanvas(480, 480);
   canvas.parent('sketch-holder');
 
   count = random(5,15);
@@ -55,7 +55,8 @@ function setup() {
 
 function draw() {
   background(0);
-  image(bg, 0, 0, 480, 360)
+
+  image(bg, 0, 0, 480, 480, 160, 160, 320, 320);
   // fill(100, 255, 30);
   
   scrollingX -= 2;
@@ -84,8 +85,10 @@ function draw() {
 
   noTint();
   textSize(48);
+  // fill(0);
+  // rect(0, height-64, width, 64);
+  image(bg, scrollingX-64, height-64, 64, 64);
   fill(255);
-  
   text("Kendrick Lamar - DNA.", scrollingX, height-10);
 }
 
