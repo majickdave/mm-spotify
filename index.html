@@ -3,34 +3,15 @@
 <html>
 
 <head>
-      <script src="libraries/p5.min.js" type='text/javascript'></script>
-      <script src="libraries/p5.dom.min.js" type='text/javascript'></script>
-      <script src='sketch.js' type='text/javascript'></script>
+
   <style>
 
-      body {padding: 100px; margin: 0; background-color: #000000;}
-/*      nav {padding: 100px; margin: 0;}*/
+  body {background-color: black
 
-      script {padding: 100px; margin: 2; border-color:#666666;}
-      input[type=text] {
-          width: 300px;
-          box-sizing: border-box;
-          border: 2px solid #ccc;
-          border-radius: 4px;
-          font-size: 16px;
-          background-color: white;
-          background-image: url('searchicon.png');
-          background-position: 10px 10px; 
-          background-repeat: no-repeat;
-          padding: 12px 20px 12px 40px;
-          -webkit-transition: width 0.4s ease-in-out;
-          transition: width 0.4s ease-in-out;
-      }
-
-      input[type=text]:focus {
-          width: 100%;
-      }
+  }
   </style>
+
+
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,43 +22,63 @@
 
   <title>Spotify MusicMind Translational Plugin</title>
 
-  <!-- Navigation -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
+    <script src="sketch.js"></script>
 
-  <nav class="w3-bar w3-black w3-animate-left">
-    <a href="https://www.spotify.com/us/account/" target="_blank"><img src="https://dl.dropboxusercontent.com/s/f3g88g88h83pjxd/Spotify_Logo_RGB_Green.png?raw=1" height="48px"/></a>
-    <a class="w3-wide"> X </a>
+    <div class="w3-center">
+        <a href="https://www.spotify.com/us/account/" target="_blank"><img src="https://dl.dropboxusercontent.com/s/f3g88g88h83pjxd/Spotify_Logo_RGB_Green.png?raw=1" height="48px"/></a>
+    <a class="w3-black"> X </a>
     <a href="https://www.musicmindcompany.com" target="_blank"><img src="https://dl.dropboxusercontent.com/s/astm73a8s2m7a6e/iphone-app-60pt%402x.png.png?raw=1" height="64px"/></a>
-  </nav>
+    </div>
 
-
-<!--   <section class="w3-container w3-center w3-animate-zoom" style="max-width:600px">
-    <h1 class="w3-container w3-white">David Samuel's Portfolio</h2>
-      <img class="w3-hover-grayscale w3-round-xlarge w3-card-4" src="https://www.dropbox.com/s/u1dfelhcg707zzm/my_face.JPG?dl=1" alt="Portrait" style="width:25%"/>
-
-      <h2 class="w3-wide">Data Architect </h2>
-      <h3 class="w3-wide">Software Engineer</h3>
-      <h4 class="w3-wide">Founder of MusicMind Inc.</h4>
-    <p class="w3-opacity"><i>Below are some augmented video applications I've developed for my graduate program at SMU</i></p>
-    <p1 class="w3-opacity"><b>Note: If you are using Safari on MacOS please switch to another browser</b></p1>
-
-  </section> -->
-  <h1 class="w3-black w3-hover-white"><i>Search, Play music, Then click, or tap anywhere</i> </h1>
+  <h1 class="w3-black w3-center"> The sketch below simulates Music lyrics to emoji translation </h1>
+  <p class="w3-black w3-center"><i> To begin, click anywhere on the album art </i> </p> 
 </head>
 
 
 <body>
 
+    <!-- <canvas id="canvas" width="600" height="600" style="border: 2px solid #222222;">
+          HTML5 Canvas not supported
+    
+
+    <script>
+        var emojiSupported = (function() {
+        var node = document.createElement('canvas');
+        if (!node.getContext || !node.getContext('2d') ||
+            typeof node.getContext('2d').fillText !== 'function')
+          return false;
+        var ctx = node.getContext('2d');
+        ctx.textBaseline = 'top';
+        ctx.font = '32px Arial';
+        ctx.fillText('\ud83d\ude03', 0, 0);
+        return ctx.getImageData(16, 16, 1, 1).data[0] !== 0;
+      })();
+    </script>
+    </canvas> -->
+
+<!--     <div>
     <form action="http://api.spotify.com/search?query=Future+Mask+Off&type=track&offset=0&limit=5">
       <input
         type="text" id="mySearch" name="search" autocomplete="on" placeholder="Search for an artist or song.." >
       <input type="hidden" id="searchSubmit" type="submit">
     </form>
+    </div> -->
+        <div style="margin: 10px" id="sketch-holder">
+    <iframe src="https://open.spotify.com/embed?uri=spotify:album:4eLPsYPBmXABThSJ821sqY" width="300" height="600" frameborder="0" allowtransparency="true"></iframe>
+
+
+
+      <!-- Our sketch will go here! -->
+    </div>
 
 
 
 </body>
 
-<iframe src="https://open.spotify.com/embed?uri=spotify:album:4eLPsYPBmXABThSJ821sqY" width="300" height="600" frameborder="0" allowtransparency="true"></iframe>
+
+
+
 
 <!-- Footer -->
 <!-- <footer class="w3-container w3-center w3-black">
