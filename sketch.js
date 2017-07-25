@@ -37,8 +37,8 @@ function setup() {
   // number = Math.floor(randomInt(1,2176));
 
   // img = loadImage("assets/images/48x48/".concat(number,".png"));
-  pos = [width, mouseY, 0];
-  spd = [10,-3, 0];
+  pos = [width, mouseY];
+  spd = [10,-3];
   // number = Math.floor(randomInt(1,2176));
   // img = loadImage("assets/images/48x48/".concat(number,".png"));
   emojis = loadEmojis();
@@ -68,9 +68,7 @@ function draw() {
     
       pos[i].x += spd[i].x;
       spd[i].y += gravity[i];
-      spd[i].z += gravity[i];
       pos[i].y += spd[i].y;
-      pos[i].z += spd[i].z
       tint(255, pos[i].x-width/width*1);
       image(emojis[i], pos[i].x, pos[i].y, radii[i]*6, radii[i]*6);
       
